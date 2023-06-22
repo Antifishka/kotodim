@@ -1,0 +1,25 @@
+.page-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+
+    &__navigation{
+        display: flex;
+        gap: 40px;
+    }
+
+    &__link{
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1.5;
+        letter-spacing: 0.5px;
+
+        color: var(--main-text-color);
+    }
+
+    &__link:hover,
+    &__link:hover {
+        color: var(--accent-color);
+    }
+}
