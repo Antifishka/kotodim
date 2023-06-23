@@ -1,0 +1,18 @@
+.page-footer{
+    background-color: var(--bg-color);
+
+    &__container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+
+    &__logo{
+        margin-bottom: 8px;
+    }
+    &__text{
+        color: var(--secondary-text-color);
+    }
+}
