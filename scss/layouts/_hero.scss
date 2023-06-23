@@ -1,0 +1,36 @@
+.hero{
+    position: relative;
+    height: 480px;
+    padding-top: 0;
+    border-radius: var(--border-radius);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: -webkit-image-set(url(../../images/hero/bg-hero.jpg) 1x);
+
+    @include mq(retina) {
+        background-image: -webkit-image-set(url(../../images/hero/bg-hero@2x.jpg) 2x);
+    }
+
+    &__message{
+        position: absolute;
+        top: 236px;
+        left: 28px;
+        width: 432px;
+        padding: 24px;
+        border-radius: var(--border-radius);
+
+        background-color: var(--bg-color);
+    }
+
+    &__title{
+        margin-bottom: 8px;
+        @include fonts(700, 32px, 1, 1.25px, null);
+
+        color: var(--secondary-text-color);
+    }
+
+    &__text {
+        color: var(--secondary-text-color);
+    }
+}

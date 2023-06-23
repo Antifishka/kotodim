@@ -1,5 +1,6 @@
 // utils
 @import './utils/vars';
+@import './utils/mixins';
 
 // base styles
 @import './base/common';
@@ -11,3 +12,6 @@
 
 // layouts
 @import './layouts/header';
+@import './layouts/hero';
+@import './layouts/take-cat';
+@import './layouts/gallery';

@@ -1,7 +1,14 @@
 body{
     font-family: var(--main-font);
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.5px;
+    @include fonts(400, 16px, 1.5, 0.5px, null);
+
+    color: var(--main-text-color);
+}
+
+.section{
+    padding-top: 60px;
+}
+
+.section-title{
+    @include fonts(700, 24px, 1.7, 0.5px, null);
 }

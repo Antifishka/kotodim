@@ -1,0 +1,30 @@
+.gallery{
+    margin-bottom: 60px;
+
+    &__title{
+        margin-bottom: 8px;
+    }
+
+    &__text{
+        margin-bottom: 40px;
+    }
+
+    &__list{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    &__item{
+        overflow: hidden;
+        flex-basis: calc((100% - 5*16px) / 6);
+        border-radius: var(--border-radius);
+
+        transition: box-shadow var(--animation);
+
+        &:hover,
+        &:focus{
+            box-shadow: var(--box-shadow);
+        }
+    }
+}
