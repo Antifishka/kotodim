@@ -4,6 +4,7 @@
   --secondary-text-color: #ffffff;
   --bg-color: #0F3F3C;
   --accent-color: #F07F2E;
+  --hero-btn: rgba(0,0,0, 0.3);
   --border-radius: 16px;
   --box-shadow: 0px 4px 16px 0px #00000040;
   --animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -99,6 +100,7 @@ img {
   width: 28px;
   height: 28px;
   border-radius: 50%;
+  cursor: pointer;
   color: var(--secondary-text-color);
   -webkit-transition: color var(--animation), background-color var(--animation);
   transition: color var(--animation), background-color var(--animation);
@@ -143,21 +145,52 @@ img {
 }
 
 .hero {
-  position: relative;
-  height: 480px;
   padding-top: 0;
+}
+.hero__container {
+  position: relative;
+}
+.hero__item {
+  position: relative;
+  overflow: hidden;
+  height: 480px;
   border-radius: var(--border-radius);
+  background-color: var(--accent-color);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-image: -webkit-image-set(url(../../images/hero/bg-hero.jpg) 1x);
+  background-image: -webkit-image-set(url(../../images/hero/bg-hero-01.jpg) 1x);
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .hero {
-    background-image: -webkit-image-set(url(../../images/hero/bg-hero@2x.jpg) 2x);
+  .hero__item {
+    background-image: -webkit-image-set(url(../../images/hero/bg-hero-01@2x.jpg) 2x);
   }
 }
-.hero__message {
+.hero__item--first {
+  background-image: -webkit-image-set(url(../../images/hero/bg-hero-01.jpg) 1x);
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero__item--first {
+    background-image: -webkit-image-set(url(../../images/hero/bg-hero-01@2x.jpg) 2x);
+  }
+}
+.hero__item--second {
+  background-image: -webkit-image-set(url(../../images/hero/bg-hero-02.jpg) 1x);
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero__item--second {
+    background-image: -webkit-image-set(url(../../images/hero/bg-hero-02@2x.jpg) 2x);
+  }
+}
+.hero__item--third {
+  background-image: -webkit-image-set(url(../../images/hero/bg-hero-03.jpg) 1x);
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero__item--third {
+    background-image: -webkit-image-set(url(../../images/hero/bg-hero-03@2x.jpg) 2x);
+  }
+}
+.hero__greeting {
   position: absolute;
   top: 236px;
   left: 28px;
@@ -176,6 +209,46 @@ img {
 }
 .hero__text {
   color: var(--secondary-text-color);
+}
+.hero__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  color: var(--secondary-text-color);
+  background-color: var(--hero-btn);
+  -webkit-transition: background-color var(--animation);
+  transition: background-color var(--animation);
+}
+.hero__btn:hover, .hero__btn:focus {
+  background-color: var(--accent-color);
+}
+.hero__btn--prev {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 36px;
+}
+.hero__btn--next {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 36px;
+}
+.hero__icon {
+  fill: currentColor;
 }
 
 .take-cat__title {

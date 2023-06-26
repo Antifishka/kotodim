@@ -25,7 +25,7 @@
 <body>
     <header class="page-header container">
         <a href="./index.html" class="logo">
-            <img src="./images/icons/cat.svg" alt="логотип сайту" width="24">
+            <img src="./images/header/cat.svg" alt="логотип сайту" width="24">
             Котодім
         </a>
 
@@ -37,14 +37,50 @@
     </header>
 
     <main>
-        <section class="section hero container">
-            <div class="hero__message">
-                <h1 class="hero__title">Привіт, людино</h1>
-                <p class="hero__text">Бракує в житті шовкових лапок, м’якенького пухнастого животика, теплого муррркотіння й веселого розгардіяшу? Візьми собі
-                котика.</p>
+        <!-- Hero -->
+        <section class="section hero">
+            <div class="hero__container container">
+                <ul class="hero__list">
+                    <li class="hero__item hero__item--first">
+                        <div class="hero__greeting">
+                            <h1 class="hero__title">Привіт, людино</h1>
+                            <p class="hero__text">Бракує в житті шовкових лапок, м’якенького пухнастого животика, теплого муррркотіння й
+                                веселого розгардіяшу? <br> Візьми собі котика.</p>
+                        </div>
+                    </li>
+                
+                    <!-- <li class="hero__item hero__item--second">
+                                    <div class="hero__greeting">
+                                        <h1 class="hero__title">Нарешті ти тут</h1>
+                                        <p class="hero__text">Люди й котики разом завжди щасливіші. Тож додай у своє життя щастячка. Чекаємо тебе! <br> Візьми
+                                            собі котика.</p>
+                                    </div>
+                                </li>
+                
+                                <li class="hero__item hero__item--third">
+                                    <div class="hero__greeting">
+                                        <h1 class="hero__title">Котики чекають</h1>
+                                        <p class="hero__text">Вибери того, що створений для тебе. Нехай сама любов муркоче тобі на вушко й торкається лапкою. <br>
+                                            Візьми собі котика.</p>
+                                    </div>
+                                </li> -->
+                </ul>
+                <div>
+                    <button class="hero__btn hero__btn--prev">
+                        <svg class="hero__icon" width="24" height="24">
+                            <use href="./images/icons/sprite.svg#icon-arrow-left"></use>
+                        </svg>
+                    </button>
+                    <button class="hero__btn hero__btn--next">
+                        <svg class="hero__icon" width="24" height="24">
+                            <use href="./images/icons/sprite.svg#icon-arrow-right"></use>
+                        </svg>
+                    </button>
+                </div>
             </div>
         </section>
 
+        <!-- Take cat -->
         <section class="section take-cat container">
             <h2 class="section-title take-cat__title">Ці друзяки готові приймати твою любов і піклування</h2>
 
@@ -81,6 +117,7 @@
             </ul>
         </section>
 
+        <!-- Gallery -->
         <section class="section gallery container">
             <h2 class="section-title gallery__title">Котики, які вже знайшли сім’ю</h2>
             <p class="gallery__text">Ти тільки поглянь, скільки ніжності!<br>
@@ -129,7 +166,7 @@
     <footer class="page-footer">
         <div class="container page-footer__container container">
             <div>
-                <img src="./images/icons/cat.svg" 
+                <img src="./images/header/cat.svg" 
                     alt="логотип сайту" 
                     width="24"
                     class="page-footer__logo">
@@ -144,7 +181,10 @@
                 <ul class="socials__list">
                     <li>
                         <a href=""
-                            class="socials__link">
+                            class="socials__link"
+                            target="_blank" 
+                            rel="noopener noreferre" 
+                            aria-label="кнопка Instagram">
                             <svg class="socials__icon" width="16" height="16">
                                 <use href="./images/icons/sprite.svg#icon-instagram"></use>
                             </svg>
@@ -152,7 +192,10 @@
                     </li>
                     <li>
                         <a href=""
-                            class="socials__link">
+                            class="socials__link"
+                            target="_blank" 
+                            rel="noopener noreferre" 
+                            aria-label="кнопка Facebook">
                             <svg class="socials__icon" width="16" height="16">
                                 <use href="./images/icons/sprite.svg#icon-facebook"></use>
                             </svg>
@@ -160,7 +203,10 @@
                     </li>
                     <li>
                         <a href=""
-                            class="socials__link">
+                            class="socials__link"
+                            target="_blank" 
+                            rel="noopener noreferre" 
+                            aria-label="кнопка YouTube">
                             <svg class="socials__icon" width="16" height="16">
                                 <use href="./images/icons/sprite.svg#icon-youtube"></use>
                             </svg>
@@ -168,7 +214,10 @@
                     </li>
                     <li>
                         <a href=""
-                            class="socials__link">
+                            class="socials__link"
+                            target="_blank" 
+                            rel="noopener noreferre" 
+                            aria-label="кнопка TikTok">
                             <svg class="socials__icon" width="16" height="16">
                                 <use href="./images/icons/sprite.svg#icon-tiktok"></use>
                             </svg>

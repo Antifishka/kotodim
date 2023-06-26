@@ -1,18 +1,51 @@
 .hero{
-    position: relative;
-    height: 480px;
     padding-top: 0;
-    border-radius: var(--border-radius);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-image: -webkit-image-set(url(../../images/hero/bg-hero.jpg) 1x);
 
-    @include mq(retina) {
-        background-image: -webkit-image-set(url(../../images/hero/bg-hero@2x.jpg) 2x);
+    &__container{
+        position: relative;
+    }
+    
+    &__item{
+        position: relative;
+        overflow: hidden;
+        height: 480px;
+        border-radius: var(--border-radius);
+        background-color: var(--accent-color);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-image: -webkit-image-set(url(../../images/hero/bg-hero-01.jpg) 1x);
+    
+        @include mq(retina) {
+            background-image: -webkit-image-set(url(../../images/hero/bg-hero-01@2x.jpg) 2x);
+        }
     }
 
-    &__message{
+    &__item--first{
+        background-image: -webkit-image-set(url(../../images/hero/bg-hero-01.jpg) 1x);
+        
+        @include mq(retina) {
+            background-image: -webkit-image-set(url(../../images/hero/bg-hero-01@2x.jpg) 2x);
+        }
+    }
+
+    &__item--second {
+        background-image: -webkit-image-set(url(../../images/hero/bg-hero-02.jpg) 1x);
+    
+        @include mq(retina) {
+            background-image: -webkit-image-set(url(../../images/hero/bg-hero-02@2x.jpg) 2x);
+        }
+    }
+
+    &__item--third {
+        background-image: -webkit-image-set(url(../../images/hero/bg-hero-03.jpg) 1x);
+    
+        @include mq(retina) {
+            background-image: -webkit-image-set(url(../../images/hero/bg-hero-03@2x.jpg) 2x);
+        }
+    }
+
+    &__greeting{
         position: absolute;
         top: 236px;
         left: 28px;
@@ -32,5 +65,44 @@
 
     &__text {
         color: var(--secondary-text-color);
+    }
+
+    &__btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: none;
+        cursor: pointer;
+
+        color: var(--secondary-text-color);
+        background-color: var(--hero-btn);
+
+        transition: background-color var(--animation);
+
+        &:hover,
+        &:focus{
+            background-color: var(--accent-color);
+        }
+    }
+
+    &__btn--prev{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 36px;
+    }
+
+    &__btn--next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 36px;
+    }
+
+    &__icon{
+        fill: currentColor;
     }
 }
