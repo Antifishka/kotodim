@@ -33,7 +33,7 @@
         background-image: -webkit-image-set(url(../../images/hero/bg-hero-02.jpg) 1x);
     
         @include mq(retina) {
-            background-image: -webkit-image-set(url(../..images/hero/bg-hero-02@2x.jpg) 2x);
+            background-image: -webkit-image-set(url(../../images/hero/bg-hero-02@2x.jpg) 2x);
         }
     }
 
