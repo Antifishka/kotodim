@@ -62,9 +62,11 @@ img {
 }
 
 .logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: grid;
+  grid-template-columns: 24px 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 8px;
   font-size: 24px;
   font-weight: 700;
@@ -126,10 +128,15 @@ img {
   padding: 16px;
 }
 .page-header__navigation {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 40px;
+  display: none;
+}
+@media (min-width: 768px) {
+  .page-header__navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 40px;
+  }
 }
 .page-header__link {
   font-size: 16px;
