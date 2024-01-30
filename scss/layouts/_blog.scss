@@ -1,0 +1,37 @@
+.blog{
+    display: grid;
+    gap: 48px;
+
+    @media (min-width: 768px) {
+        gap: 36px;
+    }
+
+    @media (min-width: 1440px) {
+        grid-area: b;
+    }
+
+    &__link {
+        display: grid;
+        gap: 20px;
+        color: var(--main-text-color);
+
+        @media (min-width: 768px) {
+            gap: 24px;
+            grid-template-columns: 264px 1fr;
+        }
+    }
+
+    &__photo{
+        width: 100%;
+    }
+
+    &__title {
+        font-family: var(--main-font);
+        margin-bottom: 12px;
+    }
+
+    &__text {
+        font-family: var(--main-font);
+        @include fonts(400, 16px, 1.5, 0.5px, null);
+    }
+}
