@@ -10,21 +10,24 @@
     }
 
     &__list{
-        display: flex;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(144px, 1fr));
         gap: 16px;
     }
 
     &__item{
         overflow: hidden;
-        flex-basis: calc((100% - 5*16px) / 6);
         border-radius: var(--border-radius);
-
         transition: box-shadow var(--animation);
 
         &:hover,
         &:focus{
             box-shadow: var(--box-shadow);
         }
+    }
+
+    &__img{
+        width: 100%;
+        object-fit: cover;
     }
 }
